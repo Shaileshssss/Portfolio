@@ -1,0 +1,51 @@
+.heading{
+    margin-left: 55%;
+    margin-top: 8%;
+    font-size: x-large;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-family: 'Kablammo', cursive;
+    font-family: 'Berkshire Swash', cursive;
+}
+#chat{
+    font-size: 25px;
+    margin-left: 55px;
+    margin-top: 75px;
+    color: black;
+    border: 3px solid aquamarine;
+    width: 200px;
+    border-radius: 15px;
+    padding: 3px;
+    background-color: bisque;
+}
+.details{
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* margin-left:82%; */
+    margin-left: 65px;
+    font-size: 18px;
+    padding: 2px;
+}
+#Ball{
+    font-size: 25px;
+    margin-left: 55px;
+    margin-top: 45px;
+    color:black;
+    border: 3px solid aquamarine;
+    width: 140px;
+    border-radius: 15px;
+    padding: 8px;
+    background-color: bisque;
+}
+#angular{
+    font-size: 25px;
+    margin-left: 55px;
+    margin-top: 45px;
+    color:black;
+    border: 3px solid aquamarine;
+    width: 190px;
+    border-radius: 15px;
+    padding: 8px;
+    background-color: bisque;
+}

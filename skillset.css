@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=IBM+Plex+Serif:wght@300&family=Kablammo&family=Noto+Sans:wght@100;300&family=Open+Sans:ital,wght@0,300;1,300&family=Orbitron:wght@600&family=Playfair:ital,wght@1,400;1,500;1,900&family=Rubik+Bubbles&family=Tilt+Prism&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: transparent; */
+}
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+.skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Orbitron', cursive;
+    /* color: black; */
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.skill-bar  {
+    height: 14px;
+    background-color: white;
+    border-radius: 3px;
+}
+.skill-per{
+    height: 14px;
+    background: lightseagreen;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: blueviolet;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+
+}
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color:coral;
+    top: -20px;
+    right:0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+@keyframes fillBars{
+    from{
+        width: 0;
+    }
+    top{
+        width: 100%;
+    }
+}
+
+.skillhead{
+    position: relative;
+    margin-top: -550px;
+    text-align: center;
+    left: 20%;
+    font-size: 25px;
+    /* font-family: 'Orbitron', cursive; */
+    color:black;
+    font-family: 'Kablammo', cursive;
+    font-family: 'Berkshire Swash', cursive;
+
+}
+
+/*  */
+.icon-container {
+    position: relative;
+}
+
+.icon {
+    cursor: pointer;
+    color:white;
+    text-decoration: underline;
+    position: fixed;
+    margin-top: -282px;
+    margin-left: 65px;
+}
+
+.information {
+    display: none;
+    position: absolute;
+    top: -269px;
+    left: -65%;
+    background-color: white;
+    padding: 5px;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+#close-button {
+    cursor: pointer;
+    color: red;
+    border-radius: 20px;
+    font: 5px;
+    padding: 5px;
+}
+#close-button:hover{
+    background-color: black;
+    border: 2px solid red;
+    font-weight: 600;
+}
+/* #infojava{
+    position:relative;
+    box-sizing: border-box;
+} */
